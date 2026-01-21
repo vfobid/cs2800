@@ -1,4 +1,3 @@
-hw2.ml
 (* If you would like, please write here how many hours you spent on the assignment: 
   XXXX
 *)
