@@ -15,13 +15,13 @@ let rec alternating (xs : int list) : bool =
   | [] -> true
   | [x] -> (x mod 2 = 0)
   | x1 :: x2 :: t ->
-      if (x1 mod 2 = 0 && x2 mod 2 <> 0) || (x1 mod 2 <> 0 && x2 mod 2 = 0)
-      then alternating (x2 :: t)
+      if (x1 mod 2 = 0 && x2 mod 2 <> 0)
+      then alternating (t)
       else false
 
 (* Q3 *)
 
-type int_tree = 
+type int_tree =
   | Leaf
   | Node of (int_tree * int * int_tree)
 
